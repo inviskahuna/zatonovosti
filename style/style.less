@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: '__Brutal Type_5';
+  src: url('../fonts/brutalregular.eot');
+  src: local('☺'), url('../fonts/brutaltype.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  //font-size: inherit;
+}
+body {
+  width: 100%;
+  height: 100%;
+.wrapper {
+  margin: 0 auto;
+  font-family: "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:0.94rem;
+  height: 70%;
+  line-height:125%;
+  background-repeat: no-repeat;
+  background-position: -5rem -11rem;
+  background-image: url(../img/background.svg);
+  background-color: #FFFFFF;
+  background-attachment: scroll;
+  background-size: 110rem;
+
+  .main {
+    padding-left: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    max-width: 60rem;
+    min-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .logo {
+      display: block;
+      max-width: 40rem;
+      max-height: 5rem;
+    }
+    .text {
+      color: #FFFFFF;
+      font-family: '__Brutal Type_5', serif;
+
+      font-weight: 400;
+      padding: 1em 0 0 0;
+      font-size: 0.8rem;
+      #promo {
+        display: block;
+        max-width: 37rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        height: auto;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        background-color: rgba(10, 44, 104, 0.5);
+      }
+      span {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .par {
+        //background-color: rgba(10,44,104,0.5);
+        max-width: 70%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  justify-content: space-between;
+
+  padding-left: 5rem;
+  max-width: 100rem;
+  min-width: 10rem;
+  height: 30%;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: '__Brutal Type_5', serif;
+  text-transform: uppercase;
+  color: black;
+
+  span {
+    margin-left: 1em;
+  }
+  .social {
+    .imgs {
+      width: 35rem;
+      img {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        display: inline-flex;
+        flex-direction: row;
+        justify-items: left;
+        justify-content: space-around;
+        max-width: 3rem;
+      }
+    }
+  }
+  .partners {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    span {
+      float: right;
+    }
+    .imgs {
+      @partners_width: 35rem;
+      width: @partners_width;
+      img {
+        margin: 1rem 1rem 1rem 1rem;
+        max-height: 3rem;
+        max-width: @partners_width / 8;
+      }
+    }
+  }
+}
+.imgs {
+  img:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 9px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
+
+/* Landscape phones and smaller */
+@media screen and (max-width: 480px) {
+  html {
+       font-size: 6px;
+     }
+  .wrapper {
+    background-position: -20rem -7rem !important;
+    #promo {
+
+    }
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .partners {
+    margin-top: 1rem;
+  }
+}
